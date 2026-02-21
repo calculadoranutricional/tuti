@@ -1,0 +1,22 @@
+{
+  "name": "tuti",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run build.client && npm run build.server",
+    "build.client": "vite build",
+    "build.server": "vite build --ssr src/entry.ssr.tsx",
+    "preview": "serve dist"
+  },
+  "devDependencies": {
+    "@builder.io/qwik-city": "^1.19.0",
+    "serve": "^14.2.5",
+    "vite": "^7.3.1",
+    "vite-tsconfig-paths": "^6.1.1"
+  },
+  "dependencies": {
+    "@builder.io/qwik": "^1.17.2"
+  }
+}
